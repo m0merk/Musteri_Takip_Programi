@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADBE083A-C9DF-40A0-BEBA-73B5EEA39AE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Stajprojesi</RootNamespace>
+    <AssemblyName>Stajprojesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaglantiSinif.cs" />
+    <Compile Include="Duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duzenle.Designer.cs">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.Designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisFotografi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisFotografi.Designer.cs">
+      <DependentUpon>FrmGirisFotografi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriTakipVTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MusteriTakipVTDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="İstatistikveGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İstatistikveGrafik.Designer.cs">
+      <DependentUpon>İstatistikveGrafik.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Duzenle.resx">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisFotografi.resx">
+      <DependentUpon>FrmGirisFotografi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="İstatistikveGrafik.resx">
+      <DependentUpon>İstatistikveGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MusteriTakipVTDataSet5.xsc">
+      <DependentUpon>MusteriTakipVTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MusteriTakipVTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MusteriTakipVTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MusteriTakipVTDataSet5.xss">
+      <DependentUpon>MusteriTakipVTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
